@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Student of Magic</name>
+		<description>Student of Magic Background</description>
+        <author url="https://www.dandwiki.com/wiki/Student_of_Magic_(5e_Background)">Homebrew
+		<update version="0.0.1">
+			<file name="background-studentofmagic.xml" />
+		</update>
+	</info>
+
+	<element name="Student of Magic" type="Background" source="Homebrew" id="ID_HOMEBREW_BACKGROUND_STUDENTOFMAGIC">
+		<description>
+			<p>You were identified as a potential magic user at a very young age and were taken in as an apprentice. You were taken from your home to be trained either by the Master who found you, or were enrolled in a school for magic users. You seldom to never see your biological family, and were raised and educated surrounded by the trappings of magic. Now, you have set out into the greater world, seeking to use what you have learned.</p>
+			<ul>
+				<li><strong>Skill Proficiencies:</strong> You can select Aracana and either History or Religion to be proficient with</li>
+				<li><strong>Tool Proficiencies (Optional):</strong> Herbalism Kit</li>
+				<li><strong>Languages (Optional):</strong> Choose any starting or exotic language</li>
+				<li><strong>Equipment:</strong> A bottle of black ink, a quill, 3 rolls of blank parchment, Potionmaker's Lab, 1d4 Books (about Arcana), a letter from your Master, a set of apprentice robes, and a belt pouch containing 20gp</li>
+			</ul>
+			<div element="ID_HOMEBREW_BACKGROUND_FEATURE_MASTERS_NAME" />
+		</description>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Student of Magic)" supports="Skill" number="2" />
+			<select type="Proficiency" name="Tool Proficiency (Student of Magic)" supports="Tool" optional="true"/>
+			<select type="Language" name="Language (Student of Magic)" optional="true" />
+			<grant type="Background Feature" id="ID_HOMEBREW_BACKGROUND_FEATURE_MASTERS_NAME" />
+			<select name="Personality Trait" type="List">
+				<item id="1">I tend to talk about magic as if everyone understands it, and cannot comprehend the ignorance of those who do not.</item>
+				<item id="2">I consider my Master to have been a font of wisdom, and have a quote from him for almost every situation.</item>
+				<item id="3">My Master taught me the value of secrets, I keep them very well and have a few of my own.</item>
+				<item id="4">I have a grand magical theory that I can’t wait to tell other people about.</item>
+				<item id="5">I am seldom seen without my nose stuck firmly in a book or scroll.</item>
+				<item id="6">When exposed to some new piece of magic, I can’t help but try to figure out what it does and how it works.</item>
+				<item id="7">I am extremely proud of the school I attended, and will boast of it often.</item>
+				<item id="8">I have no patience for ridiculous superstitions about magic.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Magic For Magic’s Sake: I seek to study and improve Magic, simply for the betterment of Magic (Neutral)</item>
+				<item id="2">Greater Good: Magic should be used to protect and improve the lives of the common people (Good)</item>
+				<item id="3">Power: Through my Power, I will conquer and gain victory (Evil)</item>
+				<item id="4">Tradition: I will uphold the standards of Magic that were taught to me by my Master (Lawful).</item>
+				<item id="5">Independence: I have cast off the shackles of my tutelage and will seek my own path (Chaotic)</item>
+				<item id="6">Spirit: I will make my Master proud (Any)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">I often think of the family I left behind when I became an apprentice, I would like to find them some day.</item>
+				<item id="2">I had a romantic relationship with a fellow student, I still love them.</item>
+				<item id="3">I am utterly loyal to my Master, everything else comes second.</item>
+				<item id="4">I am hunting the one who is responsible for the end of my apprenticeship.</item>
+				<item id="5">I had a rival all throughout my training, we still compete./item>
+				<item id="6">I idolize a historical magic user, and measure my accomplishments against theirs</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">People who are superstitious about Magic are idiots, and not worth my time./item>
+				<item id="2">I look down on anyone who was not properly trained in the Magic they wield.</item>
+				<item id="3">If my Master calls me, I’ll abandon what I’m doing to go to him.</item>
+				<item id="4">I can get so distracted by the mystery and wonder of magic, that I can forget I’m supposed to be fighting that other Wizard.</item>
+				<item id="5">A scandal prevents me from returning to my place of education, I’m trying to stay ahead of the rumors.</item>
+				<item id="6">I believe that the world would be better off if Magic-users ran everything.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Feature: Master's Name" type="Background Feature" source="Homebrew" id="ID_HOMEBREW_BACKGROUND_FEATURE_MASTERS_NAME">
+		<description>
+			<p>You were formally trained in Magic, and the name of those that trained you can open doors. You can usually gain an audience with another magic user, simply by dropping the name of your Master or School. Furthermore, you can usually find a place to stay among scholars or magic users, unless you show yourself to be a danger to them. You may also have access to resources from those who taught you, whether that is access to your school’s libraries and facilities, or simply the ability to correspond with your Master and ask him or her for advice.</p>
+			
+			<p>A student of magic is largely defined by their apprenticeship and training. They have spent most of their life surrounded by magic, and in the presence of more experienced magic users. Magic is central to this person’s life, whether it be merely a means to another goal, or mastering magic is the goal itself.</p>
+		</description>
+		<sheet alt="Master's Name">
+			<description>You were formally trained in Magic, and the name of those that trained you can open doors. You can usually gain an audience with another magic user, simply by dropping the name of your Master or School. Furthermore, you can usually find a place to stay among scholars or magic users, unless you show yourself to be a danger to them. You may also have access to resources from those who taught you, whether that is access to your school’s libraries and facilities, or simply the ability to correspond with your Master and ask him or her for advice.</description>
+		</sheet>
+		
+	</element>
+</elements>
